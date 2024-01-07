@@ -64,10 +64,10 @@ if __name__ == "__main__":
     config_path = args.config
     hps = utils.get_hparams_from_file(config_path)
     lines = []
-    with open(hps.data.training_files, encoding="utf-8") as f:
+    with open(hps.data.training_files.replace("./data","./Data").replace("\\","/"), encoding="utf-8") as f:
         lines.extend(f.readlines())
 
-    with open(hps.data.validation_files, encoding="utf-8") as f:
+    with open(hps.data.validation_files.replace("./data","./Data").replace("\\","/"), encoding="utf-8") as f:
         lines.extend(f.readlines())
     add_blank = [hps.data.add_blank] * len(lines)
 
