@@ -62,7 +62,7 @@ emo_gen:
   # 训练数据集配置文件路径
   config_path: "config.json"
   # 并行数
-  num_processes: 4
+  num_processes: 1
   # 使用设备：可选项 "cuda" 显卡推理，"cpu" cpu推理
   device: "cuda"
   # 使用多卡推理
