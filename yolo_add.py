@@ -1,1 +1,1 @@
-print("for yolo badge")
+print("juset for yolo badge")
